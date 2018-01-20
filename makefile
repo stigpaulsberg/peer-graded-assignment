@@ -11,6 +11,14 @@ README.md:
 
 	echo "number of lines of code in the guessinggame.sh are: $(nr_lines)" >> README.md
 
+	echo "To view the website, click on this [link] (https://stigpaulsberg.github.io/peer-graded-assignment/ "website")"
+
+website:
+	echo "theme: jekyll-theme-cayman" > _config.yml
+	echo "title: This is the website!" >> _config.yml
+	echo "description: Not much else to say!" >> _config.yml
+
+
 delete:
 	rm -r -f README.md
 
