@@ -21,4 +21,4 @@ website:
 
 delete:
 	rm -r -f README.md
-
+	rm -r -f _config.yml
