@@ -11,7 +11,7 @@ README.md:
 	echo "The time and date when this file was made: ${logfile}" >> README.md
 	echo "---" >> README.md
 	echo "Number of lines of code in the guessinggame.sh are:" >> README.md
-	echo "wc -l guessinggame.sh | egrep -o [0-9]+" >> README.md
+	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
 	echo "---" >> README.md
 	echo "To view the website, click here: https://stigpaulsberg.github.io/peer-graded-assignment/" >> README.md
 
