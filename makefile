@@ -1,17 +1,19 @@
 #!usr/bin/env bash
 # File: makefile
 
-NOW=$(date)
-nr_lines=$(cat guessinggame.sh | wc-l)
+logfile=$(shell date +"%Y.%m.%d %H:%M:%S")
+nr_lines:=$(cat guessinggame.sh | wc -l)
+
+all: README.md website
 
 README.md:
 	echo "# Peer graded assignment:" > README.md
 
-	echo "The time and date when this file was made: $(NOW)" >> README.md
+	echo "The time and date when this file was made: ${logfile}" >> README.md
 
-	echo "number of lines of code in the guessinggame.sh are: $(nr_lines)" >> README.md
+	echo "number of lines of code in the guessinggame.sh are: ${nr_lines}" >> README.md
 
-	echo "To view the website, click on this [link] (https://stigpaulsberg.github.io/peer-graded-assignment/ "website")"
+	echo "To view the website, click on this [link] (https://stigpaulsberg.github.io/peer-graded-assignment/ "website")" >> README.md
 
 website:
 	echo "theme: jekyll-theme-cayman" > _config.yml
