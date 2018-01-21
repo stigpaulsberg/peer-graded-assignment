@@ -13,7 +13,7 @@ README.md:
 	echo "---" >> README.md
 	echo "Number of lines of code in the guessinggame.sh are: ${nr_lines}" >> README.md
 	echo "---" >> README.md
-	echo "To view the website, click here: [](https://stigpaulsberg.github.io/peer-graded-assignment/ "website")" >> README.md
+	echo "To view the website, click here: https://stigpaulsberg.github.io/peer-graded-assignment/" >> README.md
 
 website:
 	echo "theme: jekyll-theme-cayman" > _config.yml
