@@ -11,15 +11,14 @@ README.md:
 	echo "---" >> README.md
 	echo "The time and date when this file was made: ${logfile}" >> README.md
 	echo "---" >> README.md
-	echo "number of lines of code in the guessinggame.sh are: ${nr_lines}" >> README.md
+	echo "Number of lines of code in the guessinggame.sh are: 24" >> README.md
 	echo "---" >> README.md
-	echo "To view the website, click here: https://stigpaulsberg.github.io/peer-graded-assignment/" >> README.md
+	echo "To view the website, click here: [](https://stigpaulsberg.github.io/peer-graded-assignment/ "website"" >> README.md
 
 website:
 	echo "theme: jekyll-theme-cayman" > _config.yml
 	echo "title: This is the website!" >> _config.yml
 	echo "description: Not much else to say!" >> _config.yml
-
 
 delete:
 	rm -r -f README.md
